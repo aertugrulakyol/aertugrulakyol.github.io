@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #faebed;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 300;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: smooth !important;
+  }
+}
+
+header{
+  display: flex;
+  max-width: 1040px;
+  padding: 1em;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+header img{
+  min-height: 1em;
+  max-height: 5em;
+  max-width: auto;
+}
+
+h1{
+  align-self:auto;
+  font-size: 2em;
+  font-weight: 300;
+  
+}
+
+.line{
+  border-bottom: 1px solid #140508;
+}
+
+section{
+  display: flex;
+  max-width: 1040px;
+  padding: 4em 1em 1em 1em;
+  margin: 0 auto;
+  gap: 1.5em;
+  flex-direction: column;
+  align-items: left;
+}
+.clip-mask{
+  overflow: hidden;
+}
+section img{
+  min-width: 328px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-out;
+	transition: .4s ease-out;
+  overflow: hidden;
+}
+
+section img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+span{
+  margin-top: -1em;
+}
+
+article{
+  display: flex;
+  max-width: 1040px;
+  padding: 4em 1em 4em 1em;
+  margin: 0 auto;
+  gap: 1.5em;
+  flex-direction: column;
+  align-items: left;
+}
+article img{
+  object-fit: contain;
+  max-height: 440px;
+  padding: 1em;
+  
+}
+.paragraph{
+  min-width: 338px;
+  max-width: 650px;
+  height: auto;
+  text-indent: 1em;
+  font-size: 1em;
+  padding: 1em;
+}
+
+p{
+  padding-bottom: 1em;
+}
+
+.about-flex{
+  display:flex;
+  flex-wrap:wrap; /* this */
+  gap:1em;
+  align-items: flex-end;
+}
+
+footer{
+  display: flex;
+  max-width: 1040px;
+  padding: 1em 1em 4em 1em;
+  margin: 0 auto;
+  gap: 1.5em;
+  flex-direction: column;
+  align-items: center;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  max-width: 1040px;
+  gap: 1em;
+  align-content: space-between;
+}
+.links img{
+  min-width: 80px;
+}
