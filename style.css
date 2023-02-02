@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -21,8 +21,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -36,9 +36,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: #faebed;
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-weight: 300;
+  background: url(background.svg) center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
 }
 
 /* A elements that don't have a class get default styles */
@@ -64,9 +64,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -76,35 +76,39 @@ select {
     scroll-behavior: smooth !important;
   }
 }
-
 header{
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.wrapper {
   display: flex;
   max-width: 1040px;
-  padding: 1em;
-  margin: 0 auto;
+  margin: 1em;
   flex-direction: row;
   align-items: center;
   gap: 1em;
+  border-radius: 2em;
+  background: #FFFCD4;
+  border: 3px solid ;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #252631;
+  box-shadow: 4px 4px #252631;
 }
 
-header img{
+header img {
   min-height: 1em;
-  max-height: 5em;
+  max-height: 4em;
   max-width: auto;
 }
 
-h1{
-  align-self:auto;
+h1 {
+  align-self: auto;
   font-size: 2em;
-  font-weight: 300;
-  
+  font-weight: 900;
+  color: #252631;
 }
 
-.line{
-  border-bottom: 1px solid #140508;
-}
-
-section{
+section {
   display: flex;
   max-width: 1040px;
   padding: 4em 1em 1em 1em;
@@ -113,77 +117,162 @@ section{
   flex-direction: column;
   align-items: left;
 }
-.clip-mask{
+.clip-mask {
+  background: #FFFCD4;
+  max-width: 1040px;
+  height: auto;
+  border-radius: 7% 7% 7% 7% / 10% 10% 10% 10%  ;
+  box-shadow: 4px 4px #252631;
   overflow: hidden;
+  animation: morph 3s linear infinite;
+  border: 5px solid #252631;
 }
-section img{
+
+@keyframes morph{
+  0%, 100% {
+  border-radius: 4em / 3em;
+  }
+  34% {
+    border-radius: 3em / 4em;
+  }
+  67% {
+    border-radius: 2em / 2em ;
+  }
+}
+
+section img {
   min-width: 328px;
   -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .4s ease-out;
-	transition: .4s ease-out;
+  transform: scale(1);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
   overflow: hidden;
 }
 
-section img:hover{
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
-span{
-  margin-top: -1em;
+section img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
-article{
+span {
+  border-radius: 2em;
+  background: #FFFCD4;
+  border: 3px solid ;
+  position: absolute;
+  padding: 0.5em 1em 0.5em 1em;
+  margin: -4em 1.5em 1.5em 1.5em;
+  color: #252631;
+}
+
+article {
   display: flex;
   max-width: 1040px;
   padding: 4em 1em 4em 1em;
   margin: 0 auto;
   gap: 1.5em;
   flex-direction: column;
-  align-items: left;
-}
-article img{
+  align-items: flex-start;
   object-fit: contain;
-  max-height: 440px;
-  padding: 1em;
-  
 }
-.paragraph{
-  min-width: 338px;
-  max-width: 650px;
-  height: auto;
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   text-indent: 1em;
   font-size: 1em;
-  padding: 1em;
+  max-width: 1040;
+  text-align: justify;
 }
 
-p{
-  padding-bottom: 1em;
+p {
+  padding-bottom: 0.5em;
 }
 
-.about-flex{
-  display:flex;
-  flex-wrap:wrap; /* this */
-  gap:1em;
-  align-items: flex-end;
-}
-
-footer{
-  display: flex;
-  max-width: 1040px;
-  padding: 1em 1em 4em 1em;
-  margin: 0 auto;
-  gap: 1.5em;
-  flex-direction: column;
-  align-items: center;
-}
-.links{
+.about-flex {
   display: flex;
   flex-direction: row;
-  max-width: 1040px;
+  flex-wrap: nowrap;
   gap: 1em;
-  align-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
 }
-.links img{
-  min-width: 80px;
+
+@media only screen and (max-width: 900px) {
+  .about-flex { 
+    flex-direction: column;
+  }
+  article img{
+    align-self: center;
+  }
+  .wrapper h1{
+    font-size: 1.8em;
+  }
+  .footer-wrapper{
+    margin: 1em 1em 4em 1em;
+  }
+}
+
+.about-flex img{
+  max-width: 20em;
+}
+
+
+a{
+  border-radius: 3em;
+  border: solid 3px #252631;
+  margin-top: 2em;
+  padding: 0.5em 1em 0.5em 1em;  
+  display: inline-flex;
+  background: #FFFCD4;
+  color: #252631;
+  gap: 0.5em;
+  text-decoration: none;
+  box-shadow: 3px 3px #252631;
+  align-items: center;
+}
+
+a:hover{
+  box-shadow: none;
+}
+a h6{
+  font-size: 1em;
+  margin: 0 0;
+  text-indent: 0;
+  font-weight: 900;
+
+}
+
+a img{
+  padding: 0;
+  max-height: 32px;
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 4em 1em 4em 1em;
+  align-items: center;
+  border-radius: 2em;
+  background: #FFFCD4;
+  border: 3px solid ;
+  gap: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #252631;
+  box-shadow: 4px 4px #252631;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  justify-content: center;
+  margin-bottom: 1em; 
+}
+.links img {
+  max-width: 3em;
 }
