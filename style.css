@@ -96,7 +96,7 @@ header {
 
 .wrapper {
   display: flex;
-  min-width: 100vw;
+  min-width: calc(100vw - 2em);
   min-height: 85vh;
   margin: 0;
   flex-direction: row;
