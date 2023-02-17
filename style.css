@@ -101,7 +101,7 @@ header {
   margin: 0;
   flex-direction: row;
   align-items: center;
-  padding: 1em 1em 1em 1em;
+  padding: 1em 0em;
   color: #252631;
 }
 
