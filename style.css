@@ -49,7 +49,7 @@ body {
 }
 
 .index {
-  background: url(bg-img.svg) no-repeat center center;
+  background: url(background-img.svg) no-repeat center center;
   background-size: cover;
 }
 
