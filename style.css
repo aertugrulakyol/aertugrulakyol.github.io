@@ -72,6 +72,26 @@ body {
   cursor: none;
 }
 
+body::-webkit-scrollbar{
+  display: none !important;
+  width: 0 !important; 
+}
+
+dialog::-webkit-scrollbar{
+  display: none !important;
+  width: 0 !important; 
+}
+
+.outer::-webkit-scrollbar{
+  display: none !important;
+  width: 0 !important; 
+}
+
+dialog, .outer, body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 a {
   cursor: pointer;
 }
@@ -526,12 +546,6 @@ dialog {
   margin: 1.5rem auto;
   transition: all 0.3s ease-in;
   transform: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.dialog::-webkit-scrollbar {
-  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -541,9 +555,6 @@ dialog {
   }
 }
 
-dialog::-webkit-scrollbar {
-  display: none;
-}
 
 dialog[open] {
   transition: all 0.3s ease-in;
@@ -643,7 +654,6 @@ form > button {
   justify-items: center;
   overflow: scroll;
   margin: 0 auto;
-  scrollbar-width: none;
   border-radius: clamp(0.5rem, 1vw, 1rem);
   background-color: var(--dark);
 }
