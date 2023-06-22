@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <div class="big-grid">
+      <header>
+        <div class="logo">
+          <svg
+            id="b"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 875.16 926.54"
+          >
+            <defs>
+              <style>
+                .d {
+                  fill: var(--dark);
+                }
+              </style>
+            </defs>
+            <g id="c">
+              <circle class="d" cx="236.91" cy="509.85" r="79.97" />
+              <circle class="d" cx="437.68" cy="678.21" r="79.97" />
+              <circle class="d" cx="158.53" cy="678.21" r="79.97" />
+              <circle class="d" cx="79.97" cy="846.57" r="79.97" />
+              <path
+                class="d"
+                d="m875.16,846.57c0,44.17-35.81,79.97-79.97,79.97-27.59,0-51.92-13.97-66.29-35.23l-.02-.03-10.62-22.79v-.03s-235.88-505.81-235.88-505.81c-17.71-37.98-71.71-37.98-89.42,0h0s-6.58,14.12-6.58,14.12c-6.95,14.91-18.31,27.46-32.81,35.23-11.24,6.03-24.09,9.45-37.73,9.45-44.17,0-79.97-35.8-79.97-79.96,0-.83.01-1.66.04-2.48.33-10.85,3.11-21.5,7.7-31.34l2.47-5.29,104.1-223.25,12.26-26.28,3.03-6.51c5.85-12.56,14.67-23.59,25.96-31.62,13.05-9.27,29.01-14.72,46.24-14.72s33.18,5.44,46.23,14.71c11.29,8.01,20.1,19.04,25.96,31.58l3.09,6.61,12.23,26.23,338.98,726.93,3.46,7.42c4.5,9.66,7.21,20.11,7.52,30.76.02.77.03,1.55.03,2.33Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="switch hoverable">
+          <input type="checkbox" id="mode-switch" />
+          <label for="mode-switch">
+            <svg
+              class="moon"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_384_40)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.5635 21.7456C16.9178 21.2362 18.8093 18.5189 18.8093 18.5189L17.3681 22.4213L21.837 23.0602L17.3681 23.6986L19.0981 27.0336C19.0981 27.0336 16.9401 24.8 16.635 24.4848C16.7607 29.3205 16.7916 30.5104 16.7916 30.5104C16.7916 30.5104 27.8198 25.4725 21.6929 14.3328C21.6929 14.3328 29.3337 6.03142 22.4141 0.922622C22.4141 0.922622 34.2356 7.94715 26.7389 20.009C26.7389 20.009 32.9379 14.049 29.694 8.01809C29.694 8.01809 35.3165 15.8229 28.4684 24.4085C28.4684 24.4085 30.3426 23.273 32.0005 18.945C32.0005 18.945 30.7912 31.8298 16.1463 31.9989V32.0005C16.0975 32.0005 16.0488 32.0005 16.0005 32.0005C15.9523 32.0005 15.9036 32.0005 15.8548 32.0005V31.9989C1.20935 31.8293 0 18.9445 0 18.9445C1.65798 23.2725 3.5316 24.408 3.5316 24.408C-3.31595 15.8224 2.30654 8.01756 2.30654 8.01756C-0.937352 14.0485 5.26217 20.0085 5.26217 20.0085C-2.23447 7.94662 9.58645 0.922622 9.58645 0.922622C2.66685 6.03142 10.3076 14.3328 10.3076 14.3328C4.1807 25.4725 15.2089 30.5104 15.2089 30.5104C15.2089 30.5104 15.2398 29.32 15.3655 24.4848C15.0605 24.8005 12.9024 27.0336 12.9024 27.0336L14.6324 23.6986L10.1635 23.0602L14.6324 22.4213L13.1912 18.5189C13.1912 18.5189 15.0827 21.2362 15.437 21.7456C15.5974 15.569 15.9962 0.243155 15.9978 0.171155C15.9984 0.00102162 15.9984 0.000488281 15.9984 0.000488281C15.9984 0.000488281 15.9984 0.000488281 16 0.0708883C16.0022 0.000488281 16.0022 0.000488281 16.0022 0.000488281C16.0022 0.000488281 16.0022 0.00155495 16.0027 0.171155C16.006 0.292222 16.4031 15.5829 16.5635 21.7456Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_384_40">
+                  <rect width="32" height="32" fill="none" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              class="sun"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_383_36)">
+                <path
+                  d="M0 0L4.97956 8.48178L0.775111 7.65902L5.76391 14.1614C5.54738 15.376 5.54702 16.6219 5.76391 17.8364L0.775111 24.3385L4.97956 23.5157L0 32L8.48178 27.0204L7.65902 31.2249L14.1614 26.2361C15.3767 26.453 16.6233 26.453 17.8386 26.2361L24.341 31.2249L23.5182 27.0204L32 32L27.0204 23.5161L31.2249 24.3388L26.2361 17.8364C26.4526 16.6219 26.453 15.376 26.2361 14.1614L31.2249 7.65902L27.0204 8.48178L32 0L23.5182 4.97956L24.341 0.772622L17.8364 5.76356C17.2295 5.65547 16.6148 5.6 16 5.6C15.3852 5.6 14.7705 5.65547 14.1636 5.76356L7.65902 0.772622L8.48178 4.97956L0 0ZM16 7.12711C18.2716 7.12711 20.5429 7.99289 22.2748 9.7248C25.7387 13.1886 25.7383 18.8114 22.2748 22.2748C18.8114 25.7383 13.189 25.7365 9.7248 22.2727C6.26062 18.8089 6.26133 13.1861 9.7248 9.72267C11.4567 7.99076 13.7287 7.12711 16 7.12711ZM16 9.74542C14.3989 9.74542 12.7979 10.3541 11.5772 11.5751C9.13564 14.0167 9.13529 17.9812 11.5772 20.4228C14.0192 22.8647 17.9812 22.8644 20.4228 20.4228C22.8644 17.9812 22.8647 14.0167 20.4228 11.5751C19.2018 10.3541 17.6014 9.74578 16 9.74542Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_383_36">
+                  <rect width="32" height="32" fill="none" />
+                </clipPath>
+              </defs>
+            </svg>
+          </label>
+        </div>
+      </header>
+      <section class="grid">
+        <a onclick="d.showModal()" class="hoverable shadow boing"
+          ><img src="./qmn-mockup/qmn-thumbnail.png" alt="" />
+          <p>QMN Enterprises [CRM Case Study]</p></a
+        >
+        <dialog id="d">
+          <form method="dialog">
+            <div class="heading">
+              <button onclick="d.close()">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-left">
+                    <path
+                      id="Vector"
+                      d="M9.56945 18.8201C9.37945 18.8201 9.18945 18.7501 9.03945 18.6001L2.96945 12.5301C2.67945 12.2401 2.67945 11.7601 2.96945 11.4701L9.03945 5.40012C9.32945 5.11012 9.80945 5.11012 10.0995 5.40012C10.3895 5.69012 10.3895 6.17012 10.0995 6.46012L4.55945 12.0001L10.0995 17.5401C10.3895 17.8301 10.3895 18.3101 10.0995 18.6001C9.95945 18.7501 9.75945 18.8201 9.56945 18.8201Z"
+                      fill="var(--dark)"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M20.4999 12.75H3.66992C3.25992 12.75 2.91992 12.41 2.91992 12C2.91992 11.59 3.25992 11.25 3.66992 11.25H20.4999C20.9099 11.25 21.2499 11.59 21.2499 12C21.2499 12.41 20.9099 12.75 20.4999 12.75Z"
+                      fill="var(--dark)"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <h1>QMN Customer Relationship Management App</h1>
+            </div>
+            <img
+              class="thumbnail"
+              src="./qmn-mockup/qmn-thumbnail.png"
+              alt=""
+            />
+            <div class="grid-try">
+              <h2>Overview</h2>
+              <div class="grid-try-content">
+                <p>
+                  In this conceptual project, I aim to develop a Customer
+                  Relationship Management (CRM) web app that offers a fully
+                  customizable dashboard and integrates essential functions such
+                  as in-app email, calendar, and task planning. This case study
+                  will explore the design and development of a comprehensive CRM
+                  solution tailored to meet the diverse needs of businesses. By
+                  leveraging user-centric design principles and advanced
+                  technology, the goal is to create a seamless and intuitive
+                  platform that enhances sales and customer management
+                  processes.<br /><br />
+                  <strong>My Role:</strong> As sole designer I was responsible
+                  of user experience & interface design.<br />
+                  <strong>Project Duration:</strong> 4 weeks
+                </p>
+                <div class="ideation-grid">
+                  <div class="ideation-list">
+                    <p><strong>Process</strong></p>
+                    <ul>
+                      <li>Research</li>
+                      <li>Ideation</li>
+                      <li>Design</li>
+                    </ul>
+                  </div>
+                  <div class="ideation-list">
+                    <p><strong>Tools</strong></p>
+                    <ul>
+                      <li>Figma</li>
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solution">
+              <p>
+                <strong>Challenge:</strong> The challenge I faced in developing
+                my CRM web app with fully customizable features was finding the
+                right balance between flexibility and simplicity. I wanted to
+                offer customization options without overwhelming users with a
+                complex interface.
+              </p>
+              <p>
+                <strong>Solution:</strong> To address this, I implemented a
+                user-friendly interface that allows users to personalize their
+                CRM experience easily. I incorporated a modular design system,
+                enabling users to choose and arrange dashboard widgets according
+                to their preferences. With intuitive drag-and-drop
+                functionality, users can customize the layout and easily add or
+                remove widgets.
+              </p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <div class="outer" id="sliderContainer">
+                  <div class="inner" id="sliderInner">
+                    <img src="qmn-mockup/01.png" alt="" />
+                    <img src="qmn-mockup/02.png" alt="" />
+                    <img src="qmn-mockup/03.png" alt="" />
+                    <img src="qmn-mockup/04.png" alt="" />
+                    <img src="qmn-mockup/05.png" alt="" />
+                    <img src="qmn-mockup/06.png" alt="" />
+                    <img src="qmn-mockup/07.png" alt="" />
+                    <img src="qmn-mockup/08.png" alt="" />
+                    <img src="qmn-mockup/09.png" alt="" />
+                    <img src="qmn-mockup/10.png" alt="" />
+                    <img src="qmn-mockup/11.png" alt="" />
+                    <img src="qmn-mockup/12.png" alt="" />
+                    <img src="qmn-mockup/13.png" alt="" />
+                    <img src="qmn-mockup/14.png" alt="" />
+                    <img src="qmn-mockup/15.png" alt="" />
+                    <img src="qmn-mockup/16.png" alt="" />
+                    <img src="qmn-mockup/17.png" alt="" />
+                    <img src="qmn-mockup/18.png" alt="" />
+                    <img src="qmn-mockup/19.png" alt="" />
+                    <img src="qmn-mockup/20.png" alt="" />
+                    <img src="qmn-mockup/21.png" alt="" />
+                    <img src="qmn-mockup/22.png" alt="" />
+                    <img src="qmn-mockup/margin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar"></div>
+                <div class="progress-bar-border"></div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Research</h2>
+              <div class="grid-try-content">
+                <p>
+                  To familiarize myself with CRM technologies and designing a
+                  media management dashboard, I conducted secondary research
+                  using Attio, Customer.io, and Zendesk. This involved reviewing
+                  screenshots of similar products and analyzing their features.
+                  The research provided valuable insights and helped me
+                  understand client jargon for effective communication during
+                  the project. Overall, it equipped me with the knowledge needed
+                  to approach the design with confidence.
+                </p>
+              </div>
+            </div>
+            <div class="research-image">
+              <img src="./qmn-mockup/23.png" alt="" />
+              <img src="./qmn-mockup/24.png" alt="" />
+              <img src="./qmn-mockup/25.png" alt="" />
+              <img src="./qmn-mockup/26.png" alt="" />
+            </div>
+            <div class="grid-try">
+              <h2>Ideation</h2>
+              <div class="grid-try-content">
+                <p>
+                  Based on a comprehensive understanding of user needs and
+                  objectives throughout the information architecture, I embarked
+                  on the ideation phase. Creating user stories provided a clear
+                  vision and direction for the design, ensuring that every
+                  aspect of the web app focused on meeting user goals and
+                  requirements. By aligning my design concepts with user
+                  stories, I aimed to create a powerful and intuitive web app
+                  that fulfills users' objectives and empowers them to achieve
+                  their desired outcomes across the entire application.
+                </p>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Information Architecture</h3>
+              <div class="ideation-grid">
+                <div class="ideation-list">
+                  <strong>Dashboard:</strong>
+                  <ul>
+                    <li>
+                      Overview: Provides a high-level summary of key metrics,
+                      such as total revenue, sales performance, and upcoming
+                      tasks.
+                    </li>
+                    <li>
+                      Customization: Allows users to personalize their dashboard
+                      by selecting and arranging widgets according to their
+                      preferences.
+                    </li>
+                    <li>
+                      Reports: Provides access to detailed reports and analytics
+                      for in-depth sales analysis and performance tracking.
+                    </li>
+                    <li>CTA: "+ Create New"</li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Contacts:</strong>
+                  <ul>
+                    <li>
+                      All Contacts: Displays a comprehensive list of all
+                      contacts, including customers, leads, and prospects.
+                    </li>
+                    <li>
+                      Contact Details: Provides a detailed view of individual
+                      contact information, including name, company, contact
+                      details, and communication history.
+                    </li>
+                    <li>
+                      Segmentation: Enables users to categorize contacts into
+                      different segments based on criteria like industry,
+                      location, or customer type.
+                    </li>
+                    <li>CTA: "+ Add Contact"</li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Sales:</strong>
+                  <ul>
+                    <li>
+                      Opportunities: Allows users to manage and track sales
+                      opportunities, including creating, editing, and closing
+                      deals.
+                    </li>
+                    <li>
+                      Pipelines: Provides a visual representation of the sales
+                      pipeline, showing the various stages of each opportunity
+                      and their progress.
+                    </li>
+                    <li>
+                      Sales Goals: Enables users to set and monitor sales
+                      targets, track progress, and assess performance against
+                      goals.
+                    </li>
+                    <li>CTA: "+ New Task"</li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Leads:</strong>
+                  <ul>
+                    <li>
+                      Lead Capture: Allows users to capture and record
+                      information about potential leads generated from various
+                      sources, such as website forms or marketing campaigns.
+                    </li>
+                    <li>
+                      Lead Qualification: Provides tools for qualifying and
+                      scoring leads based on predefined criteria to prioritize
+                      follow-up actions.
+                    </li>
+                    <li>
+                      Lead Conversion: Facilitates the conversion of qualified
+                      leads into sales opportunities by seamlessly transferring
+                      data and relevant information.
+                    </li>
+                    <li>CTA: "+ New Lead"</li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Mail:</strong>
+                  <ul>
+                    <li>
+                      nbox: Integrates an in-app mailbox where users can view
+                      and manage their emails, including composing, sending, and
+                      organizing messages.
+                    </li>
+                    <li>
+                      Email Templates: Offers a library of pre-designed email
+                      templates for quick and efficient communication with
+                      contacts.
+                    </li>
+                    <li>
+                      Mail Analytics: Provides insights into email campaign
+                      performance, including open rates, click-through rates,
+                      and engagement metrics.
+                    </li>
+                    <li>CTA: "+ Compose"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Design</h2>
+              <div class="grid-try-content">
+                <p>
+                  When I started designing, one thing was clear in my mind: the
+                  design should be minimalistic and clean. I always kept the
+                  60-30-10 rule in mind, ensuring a well-balanced composition.
+                  To make effective use of white space, I adopted a 4-point grid
+                  system. Accessibility was always a top priority, so I focused
+                  on legibility and reducing eye strain, especially with the
+                  implementation of a dark mode. In the light mode, I used
+                  shadows to provide elevation, while in the dark mode, I
+                  achieved a similar effect with lighter tones.
+                </p>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Typography</h3>
+              <div class="grid-with-img">
+                <p>
+                  <strong>Typeface</strong> <br />
+                  General Sans Variable
+                </p>
+                <div class="grid-with-img-content">
+                  <img src="./qmn-mockup/27.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-wrapper">
+              <div class="col-1">
+                <p>
+                  <strong>Headings</strong>
+                </p>
+                <img src="./qmn-mockup/28.png" alt="" />
+              </div>
+              <div class="col-2">
+                <div class="col-2-text">
+                  <p>
+                    <strong>Text</strong>
+                  </p>
+                  <img src="./qmn-mockup/29.png" alt="" />
+                </div>
+                <div class="col-2-text">
+                  <p>
+                    <strong>Weight</strong>
+                  </p>
+                  <img src="./qmn-mockup/30.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Iconography</h3>
+              <div class="grid-with-img">
+                <p>
+                  <strong>Iconsax Line Oval Icons Collection</strong>
+                </p>
+                <div class="grid-with-img-content">
+                  <img src="./qmn-mockup/31.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Illustrations</h3>
+              <div class="grid-illustrations">
+                <img class="first" src="./qmn-mockup/32.png" alt="" />
+                <img class="second" src="./qmn-mockup/33.png" alt="" />
+                <img class="third" src="./qmn-mockup/34.png" alt="" />
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Color</h3>
+              <div class="grid-color">
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Primary</strong>
+                  </p>
+                  <img src="./qmn-mockup/35.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Neutrals</strong>
+                  </p>
+                  <img src="./qmn-mockup/36.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Warning</strong>
+                  </p>
+                  <img src="./qmn-mockup/37.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Danger</strong>
+                  </p>
+                  <img src="./qmn-mockup/38.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Success</strong>
+                  </p>
+                  <img src="./qmn-mockup/39.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Buttons</h3>
+              <div class="grid-color">
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Medium</strong>
+                  </p>
+                  <img src="./qmn-mockup/40.png" alt="" />
+                </div>
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Small</strong>
+                  </p>
+                  <img src="./qmn-mockup/42.png" alt="" />
+                </div>
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Switches</strong>
+                  </p>
+                  <img src="./qmn-mockup/41.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Dark & Light Mode Elevation</h3>
+              <div class="grid-dark-light">
+                <img src="./qmn-mockup/43.png" alt="" />
+                <img src="./qmn-mockup/44.png" alt="" />
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Responsive Design</h3>
+              <div class="grid-responsive">
+                <div class="grid-responsive-col">
+                  <p>iPad Pro 12.9"</p>
+                  <img src="./qmn-mockup/45.png" alt="" />
+                </div>
+                <div class="grid-responsive-col">
+                  <p>1440x1024</p>
+                  <img src="./qmn-mockup/46.png" alt="" />
+                </div>
+                <div class="grid-responsive-col">
+                  <p>1366x768</p>
+                  <img src="./qmn-mockup/47.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Takeaway</h2>
+              <div class="grid-try-content">
+                <p>
+                  <strong> User-Centered Design:</strong> By conducting thorough
+                  user research, creating user personas, and mapping out user
+                  journeys, the design of the CRM SaaS web app was driven by a
+                  deep understanding of user needs, pain points, and goals.
+                  <br /><br />
+                  <strong>Information Architecture:</strong> The thoughtful
+                  organization of the app's components, such as the dashboard,
+                  contacts, sales, leads, and mail, ensured a logical and
+                  intuitive structure. This structure allowed users to navigate
+                  the app seamlessly and find the information they needed
+                  efficiently. <br /><br />
+                  <strong>Customization & Personalization:</strong> The
+                  inclusion of customizable dashboards and the ability to
+                  personalize the app according to user preferences enhanced the
+                  user experience. Users could tailor the app to their specific
+                  requirements and access the information and features that were
+                  most relevant to them. <br /><br />
+                  <strong>Design Principles:</strong> The design approach
+                  focused on minimalism, cleanliness, and the effective use of
+                  white space. The 60-30-10 rule and the adoption of a 4-point
+                  grid system helped achieve visual harmony and balance in the
+                  interface. Attention to legibility and reducing eye strain,
+                  along with the implementation of a dark mode, prioritized
+                  accessibility for all users. <br /><br />
+                  <strong>Continuous Improvement:</strong> The project
+                  emphasized the iterative nature of design. User feedback,
+                  usability testing, and competitor analysis were valuable
+                  sources of insights for identifying areas of improvement and
+                  driving ongoing enhancements to the CRM SaaS web app.
+                  <br /><br />
+                  Overall, these takeaways highlight the importance of
+                  user-centered design, thoughtful information architecture,
+                  customization, adherence to design principles, and a mindset
+                  of continuous improvement in creating a successful CRM SaaS
+                  web app.
+                </p>
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <a onclick="e.showModal()" class="hoverable shadow boing"
+          ><img src="./cc-mockup/thumbnail.png" alt="" />
+          <p>Coin Connect [Crypto App Case Study]</p></a
+        >
+        <dialog id="e">
+          <form method="dialog">
+            <div class="heading">
+              <button onclick="e.close()">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-left">
+                    <path
+                      id="Vector"
+                      d="M9.56945 18.8201C9.37945 18.8201 9.18945 18.7501 9.03945 18.6001L2.96945 12.5301C2.67945 12.2401 2.67945 11.7601 2.96945 11.4701L9.03945 5.40012C9.32945 5.11012 9.80945 5.11012 10.0995 5.40012C10.3895 5.69012 10.3895 6.17012 10.0995 6.46012L4.55945 12.0001L10.0995 17.5401C10.3895 17.8301 10.3895 18.3101 10.0995 18.6001C9.95945 18.7501 9.75945 18.8201 9.56945 18.8201Z"
+                      fill="var(--dark)"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M20.4999 12.75H3.66992C3.25992 12.75 2.91992 12.41 2.91992 12C2.91992 11.59 3.25992 11.25 3.66992 11.25H20.4999C20.9099 11.25 21.2499 11.59 21.2499 12C21.2499 12.41 20.9099 12.75 20.4999 12.75Z"
+                      fill="var(--dark)"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <h1>Coin Connect</h1>
+            </div>
+            <img class="thumbnail" src="./cc-mockup/thumbnail.png" alt="" />
+            <div class="grid-try">
+              <h2>Overview</h2>
+              <div class="grid-try-content">
+                <p>
+                  In this case study, I aim to develop a Crypto Wallet app that
+                  caters specifically to the needs of cryptocurrency
+                  enthusiasts, with a primary focus on crypto assets,
+                  decentralized finance (DeFi), and non-fungible tokens (NFTs).
+                  The project will revolve around designing and developing a
+                  comprehensive mobile application that offers a seamless and
+                  secure experience for managing and utilizing digital assets in
+                  the crypto ecosystem.<br /><br />
+                  <strong>My Role:</strong> As sole designer I was responsible
+                  of user experience & interface design.<br />
+                  <strong>Project Duration:</strong> 4 weeks
+                </p>
+                <div class="ideation-grid">
+                  <div class="ideation-list">
+                    <p><strong>Process</strong></p>
+                    <ul>
+                      <li>Research</li>
+                      <li>Ideation</li>
+                      <li>Design</li>
+                    </ul>
+                  </div>
+                  <div class="ideation-list">
+                    <p><strong>Tools</strong></p>
+                    <ul>
+                      <li>Figma</li>
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solution">
+              <p>
+                <strong>Challenge:</strong> One of the key challenges in
+                developing a Crypto Wallet app focused on crypto assets, DeFi,
+                and NFTs is ensuring a seamless and secure experience for
+                managing and utilizing digital assets within the volatile and
+                rapidly evolving crypto ecosystem. The app needs to address the
+                complexity of interacting with multiple blockchains, maintaining
+                strong security measures, and providing real-time access to the
+                latest market data and decentralized protocols.
+              </p>
+              <p>
+                <strong>Solution:</strong> To overcome these challenges, the
+                Crypto Wallet app will be built with robust security features
+                and intuitive user interfaces. It will leverage APIs and
+                integrations with various blockchain networks to enable seamless
+                interaction with different crypto assets. The app will
+                incorporate multi-factor authentication, encrypted storage, and
+                secure key management systems to protect users' digital assets.
+              </p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <div class="outer" id="sliderContainer">
+                  <div class="inner" id="sliderInner">
+                    <img src="cc-mockup/1.png" alt="" />
+                    <img src="cc-mockup/2.png" alt="" />
+                    <img src="cc-mockup/3.png" alt="" />
+                    <img src="cc-mockup/4.png" alt="" />
+                    <img src="cc-mockup/5.png" alt="" />
+                    <img src="cc-mockup/6.png" alt="" />
+                    <img src="cc-mockup/7.png" alt="" />
+                    <img src="cc-mockup/8.png" alt="" />
+                    <img src="cc-mockup/9.png" alt="" />
+                    <img src="cc-mockup/10.png" alt="" />
+                    <img src="cc-mockup/11.png" alt="" />
+                    <img src="cc-mockup/12.png" alt="" />
+                    <img src="cc-mockup/13.png" alt="" />
+                    <img src="cc-mockup/14.png" alt="" />
+                    <img src="cc-mockup/15.png" alt="" />
+                    <img src="cc-mockup/16.png" alt="" />
+                    <img src="cc-mockup/17.png" alt="" />
+                    <img src="cc-mockup/18.png" alt="" />
+                    <img src="cc-mockup/19.png" alt="" />
+                    <img src="cc-mockup/20.png" alt="" />
+                    <img src="cc-mockup/21.png" alt="" />
+                    <img src="cc-mockup/22.png" alt="" />
+                    <img src="qmn-mockup/margin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar"></div>
+                <div class="progress-bar-border"></div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Research</h2>
+              <div class="grid-try-content">
+                <p>
+                  To gain familiarity with crypto technologies and designing a
+                  comprehensive crypto app, I conducted secondary research using
+                  platforms such as Coinbase, Rainbow, OpenSea, and Revolut.
+                  This involved analyzing the features and interfaces of these
+                  applications, studying their functionalities, and reviewing
+                  user feedback. By exploring screenshots and conducting a
+                  thorough examination, I gained valuable insights into the
+                  design elements and terminology specific to the crypto
+                  industry.
+                </p>
+              </div>
+            </div>
+            <div class="research-image-cc">
+              <img src="./cc-mockup/23.png" alt="" />
+              <img src="./cc-mockup/24.png" alt="" />
+              <img src="./cc-mockup/25.png" alt="" />
+              <img src="./cc-mockup/26.png" alt="" />
+            </div>
+            <div class="grid-try">
+              <h2>Ideation</h2>
+              <div class="grid-try-content">
+                <p>
+                  Based on a comprehensive understanding of user needs and
+                  objectives throughout the information architecture, I embarked
+                  on the ideation phase. Creating user stories provided a clear
+                  vision and direction for the design, ensuring that every
+                  aspect of the web app focused on meeting user goals and
+                  requirements. By aligning my design concepts with user
+                  stories, I aimed to create a powerful and intuitive web app
+                  that fulfills users' objectives and empowers them to achieve
+                  their desired outcomes across the entire application.
+                </p>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Information Architecture</h3>
+              <div class="ideation-grid">
+                <div class="ideation-list">
+                  <strong>Home Screen:</strong>
+                  <ul>
+                    <li>
+                      Total Funds: Displays the overall value of the user's
+                      crypto, NFT, and DeFi assets.
+                    </li>
+                    <li>
+                      Send: Allows users to send cryptocurrencies or NFTs to
+                      other wallet addresses.
+                    </li>
+                    <li>
+                      Receive: Provides a unique wallet address for users to
+                      receive cryptocurrencies or NFTs from others.
+                    </li>
+                    <li>
+                      Swap: Enables users to exchange one cryptocurrency for
+                      another within the app.
+                    </li>
+                    <li>
+                      Buy & Sell: Allows users to purchase or sell
+                      cryptocurrencies with fiat currency or other
+                      cryptocurrencies.
+                    </li>
+                    <li>
+                      Current Crypto, NFT, and DeFi Assets Showcase: Showcases
+                      the user's current holdings, including a summary of each
+                      asset's value and percentage change.
+                    </li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Notifications:</strong>
+                  <ul>
+                    <li>
+                      Push Notifications: Allows users to enable or disable push
+                      notifications for various types of alerts, such as price
+                      alerts, transaction confirmations, or important updates.
+                    </li>
+                    <li>
+                      Transaction Notifications: Provides options to customize
+                      notifications for specific transaction activities, such as
+                      incoming funds, successful transfers, or pending
+                      transactions.
+                    </li>
+                    <li>
+                      News and Updates: Enables users to choose whether they
+                      want to receive notifications for news and updates related
+                      to the crypto market, NFTs, DeFi, and other relevant
+                      topics.
+                    </li>
+                    <li>
+                      Price Alerts: Allows users to set price thresholds for
+                      specific cryptocurrencies or assets and receive
+                      notifications when the price reaches or exceeds the
+                      specified levels.
+                    </li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Search:</strong>
+                  <ul>
+                    <li>
+                      Allows users to search for specific cryptocurrencies,
+                      NFTs, or DeFi projects within the app.
+                    </li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Transaction Page:</strong>
+                  <ul>
+                    <li>
+                      Current Transactions: Displays a list of recent
+                      transactions, including details such as date, time, asset
+                      type, and transaction status.
+                    </li>
+                  </ul>
+                </div>
+                <div class="ideation-list">
+                  <strong>Explore Page:</strong>
+                  <ul>
+                    <li>
+                      Trending NFT Collections: Showcases popular and trending
+                      NFT collections, allowing users to explore and discover
+                      new artworks.
+                    </li>
+                    <li>
+                      Metaverse: Provides information and updates about the
+                      metaverse, including virtual worlds, digital events, and
+                      related news.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Design</h2>
+              <div class="grid-try-content">
+                <p>
+                  When I started designing, one thing was clear in my mind: the
+                  design should be minimalistic and clean. I always kept the
+                  60-30-10 rule in mind, ensuring a well-balanced composition.
+                  To make effective use of white space, I adopted a 4-point grid
+                  system. Accessibility was always a top priority, so I focused
+                  on legibility and reducing eye strain, especially with the
+                  implementation of a dark mode. In the light mode, I used
+                  shadows to provide elevation, while in the dark mode, I
+                  achieved a similar effect with lighter tones.
+                </p>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Typography</h3>
+              <div class="grid-with-img">
+                <p>
+                  <strong>Typeface</strong> <br />
+                  Switzer Variable
+                </p>
+                <div class="grid-with-img-content">
+                  <img src="./cc-mockup/27.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-wrapper">
+              <div class="col-1">
+                <p>
+                  <strong>Headings</strong>
+                </p>
+                <img src="./cc-mockup/28.png" alt="" />
+              </div>
+              <div class="col-2">
+                <div class="col-2-text">
+                  <p>
+                    <strong>Text</strong>
+                  </p>
+                  <img src="./cc-mockup/29.png" alt="" />
+                </div>
+                <div class="col-2-text">
+                  <p>
+                    <strong>Weight</strong>
+                  </p>
+                  <img src="./cc-mockup/30.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Iconography</h3>
+              <div class="grid-with-img">
+                <p>
+                  <strong>Iconsax Line Oval Icons Collection</strong>
+                </p>
+                <div class="grid-with-img-content">
+                  <img src="./cc-mockup/31.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Color</h3>
+              <div class="grid-color">
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Primary</strong>
+                  </p>
+                  <img src="./cc-mockup/32.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Neutrals</strong>
+                  </p>
+                  <img src="./cc-mockup/33.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Secondary</strong>
+                  </p>
+                  <img src="./cc-mockup/34.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Warning</strong>
+                  </p>
+                  <img src="./cc-mockup/35.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Success</strong>
+                  </p>
+                  <img src="./cc-mockup/36.png" alt="" />
+                </div>
+                <div class="grid-color-inner">
+                  <p>
+                    <strong>Danger</strong>
+                  </p>
+                  <img src="./cc-mockup/37.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ideation-content">
+              <h3>Buttons</h3>
+              <div class="grid-color">
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Medium</strong>
+                  </p>
+                  <img src="./cc-mockup/38.png" alt="" />
+                </div>
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Small</strong>
+                  </p>
+                  <img src="./cc-mockup/40.png" alt="" />
+                </div>
+                <div class="grid-buttons-inner">
+                  <p>
+                    <strong>Switches</strong>
+                  </p>
+                  <img src="./cc-mockup/39.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Takeaway</h2>
+              <div class="grid-try-content">
+                <p>
+                  The crypto app I have designed aims to provide cryptocurrency
+                  enthusiasts with a seamless and secure platform for managing
+                  their digital assets, exploring the world of DeFi and NFTs,
+                  and staying informed about the latest trends in the crypto
+                  market. With a user-friendly interface and robust features,
+                  the app offers a comprehensive suite of functionalities.
+                  <br /><br />
+                  I can easily track my total funds, send and receive
+                  cryptocurrencies or NFTs, swap between different digital
+                  assets, and engage in buying and selling activities. The app
+                  also showcases my current crypto, NFT, and DeFi assets,
+                  allowing me to stay updated on my portfolio's performance.
+                  <br /><br />
+                  The transaction page provides a clear overview of my recent
+                  transactions, while the explore page offers insights into
+                  trending NFT collections and the metaverse, enabling me to
+                  discover new opportunities and experiences. <br /><br />
+                  With a robust search function, I can easily find specific
+                  cryptocurrencies, NFTs, or DeFi projects within the app. The
+                  settings section allows me to personalize my account
+                  preferences, manage security measures like two-factor
+                  authentication, customize language and currency preferences,
+                  and tailor the app's appearance to my liking. <br /><br />
+                  Moreover, the app empowers me with control over notifications,
+                  ensuring I receive important alerts related to price
+                  movements, transactions, news updates, and security events.
+                  <br /><br />
+                  Overall, this crypto app is designed to enhance my user
+                  experience, simplify asset management, and provide a gateway
+                  to the dynamic world of cryptocurrencies, DeFi, and NFTs. It
+                  offers a secure and intuitive platform that empowers me to
+                  navigate the crypto ecosystem with confidence and make
+                  informed decisions while staying connected to the latest
+                  developments in the industry.
+                </p>
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <a onclick="f.showModal()" class="hoverable shadow boing"
+          ><img src="./balqabi-mockup/balqabi-thumbnail.png" alt="" />
+          <p>Balqabi [Game UI Case Study]</p></a
+        >
+        <dialog id="f">
+          <form method="dialog">
+            <div class="heading">
+              <button onclick="f.close()">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-left">
+                    <path
+                      id="Vector"
+                      d="M9.56945 18.8201C9.37945 18.8201 9.18945 18.7501 9.03945 18.6001L2.96945 12.5301C2.67945 12.2401 2.67945 11.7601 2.96945 11.4701L9.03945 5.40012C9.32945 5.11012 9.80945 5.11012 10.0995 5.40012C10.3895 5.69012 10.3895 6.17012 10.0995 6.46012L4.55945 12.0001L10.0995 17.5401C10.3895 17.8301 10.3895 18.3101 10.0995 18.6001C9.95945 18.7501 9.75945 18.8201 9.56945 18.8201Z"
+                      fill="var(--dark)"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M20.4999 12.75H3.66992C3.25992 12.75 2.91992 12.41 2.91992 12C2.91992 11.59 3.25992 11.25 3.66992 11.25H20.4999C20.9099 11.25 21.2499 11.59 21.2499 12C21.2499 12.41 20.9099 12.75 20.4999 12.75Z"
+                      fill="var(--dark)"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <h1>Balqabi</h1>
+            </div>
+            <img
+              class="thumbnail"
+              src="./balqabi-mockup/balqabi-thumbnail.png"
+              alt=""
+            />
+            <div class="grid-try">
+              <h2>Overview</h2>
+              <div class="grid-try-content">
+                <p>
+                  I successfully designed a game UI as a freelance job for an
+                  indie game developer. The game, called Balqabi, is a
+                  futuristic puzzle game that revolves around the concept of
+                  artificial intelligence taking over the world. The client
+                  specifically requested a futuristic and minimalistic design,
+                  and I delivered a visually captivating interface that met
+                  their requirements. The client expressed great satisfaction
+                  with the design, which further highlights my ability to
+                  understand and fulfill the unique preferences of my
+                  clients.<br /><br />
+                  <strong>My Role:</strong> As sole designer I was responsible
+                  of user experience & interface design.<br />
+                  <strong>Project Duration:</strong> 2 weeks
+                </p>
+              </div>
+            </div>
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <div class="outer" id="sliderContainer">
+                  <div class="inner" id="sliderInner">
+                    <img src="balqabi-mockup/" alt="" />
+                    <img src="balqabi-mockup/1.webp" alt="" />
+                    <img src="balqabi-mockup/2.png" alt="" />
+                    <img src="balqabi-mockup/3.png" alt="" />
+                    <img src="balqabi-mockup/4.png" alt="" />
+                    <img src="balqabi-mockup/5.png" alt="" />
+                    <img src="balqabi-mockup/6.png" alt="" />
+                    <img src="balqabi-mockup/7.png" alt="" />
+                    <img src="balqabi-mockup/8.png" alt="" />
+                    <img src="balqabi-mockup/9.png" alt="" />
+                    <img src="qmn-mockup/margin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar"></div>
+                <div class="progress-bar-border"></div>
+              </div>
+            </div>
+            <div class="grid-try">
+              <h2>Takeaway</h2>
+              <div class="grid-try-content">
+                <p>
+                  The successful completion of the Balqabi game UI as a
+                  freelance project demonstrates my ability to meet client
+                  expectations and deliver exceptional results. By understanding
+                  and fulfilling the client's specific request for a futuristic
+                  and minimalistic design, I created a visually captivating
+                  interface that aligned perfectly with the game's concept. The
+                  client's satisfaction further validates my skill in
+                  comprehending and fulfilling the unique preferences of my
+                  clients, ensuring their vision is brought to life.
+                </p>
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <a onclick="g.showModal()" class="hoverable shadow boing"
+          ><img
+            class="form-img"
+            src="./tt-mockup/timeless-threads-thumbnail.webp"
+            alt=""
+          />
+          <p>Timeless Threads [Case Study]</p>
+        </a>
+        <dialog id="g">
+          <form method="dialog">
+            <div class="heading">
+              <button onclick="f.close()">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-left">
+                    <path
+                      id="Vector"
+                      d="M9.56945 18.8201C9.37945 18.8201 9.18945 18.7501 9.03945 18.6001L2.96945 12.5301C2.67945 12.2401 2.67945 11.7601 2.96945 11.4701L9.03945 5.40012C9.32945 5.11012 9.80945 5.11012 10.0995 5.40012C10.3895 5.69012 10.3895 6.17012 10.0995 6.46012L4.55945 12.0001L10.0995 17.5401C10.3895 17.8301 10.3895 18.3101 10.0995 18.6001C9.95945 18.7501 9.75945 18.8201 9.56945 18.8201Z"
+                      fill="var(--dark)"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M20.4999 12.75H3.66992C3.25992 12.75 2.91992 12.41 2.91992 12C2.91992 11.59 3.25992 11.25 3.66992 11.25H20.4999C20.9099 11.25 21.2499 11.59 21.2499 12C21.2499 12.41 20.9099 12.75 20.4999 12.75Z"
+                      fill="var(--dark)"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <h1>Timeless Threads</h1>
+            </div>
+            <img src="./tt-mockup/Presentation.webp" alt="" />
+          </form>
+        </dialog>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <button onclick="location.href='ux-ui.html'" class="hoverable boing">
+            design
+          </button>
+          <button
+            onclick="location.href='prompts.html'"
+            class="hoverable boing"
+          >
+            prompts
+          </button>
+          <button onclick="location.href='about.html'" class="hoverable boing">
+            about
+          </button>
+          <button onclick="location.href='index.html'" class="hoverable boing">
+            <svg
+              width="2rem"
+              height="2rem"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.79 22.75H6.21C3.47 22.75 1.25 20.52 1.25 17.78V10.37C1.25 9.00997 2.09 7.29997 3.17 6.45997L8.56 2.25997C10.18 0.999975 12.77 0.939975 14.45 2.11997L20.63 6.44997C21.82 7.27997 22.75 9.05997 22.75 10.51V17.79C22.75 20.52 20.53 22.75 17.79 22.75ZM9.48 3.43997L4.09 7.63997C3.38 8.19997 2.75 9.46997 2.75 10.37V17.78C2.75 19.69 4.3 21.25 6.21 21.25H17.79C19.7 21.25 21.25 19.7 21.25 17.79V10.51C21.25 9.54997 20.56 8.21997 19.77 7.67997L13.59 3.34997C12.45 2.54997 10.57 2.58997 9.48 3.43997Z"
+                fill="var(--dark)"
+              />
+              <path
+                d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V15C11.25 14.59 11.59 14.25 12 14.25C12.41 14.25 12.75 14.59 12.75 15V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                fill="var(--dark)"
+              />
+            </svg>
+          </button>
+          <button
+            onclick="window.open('https://twitter.com/aertugrulakyol', '_blank');"
+            class="hoverable boing"
+          >
+            twitter
+          </button>
+          <button
+            onclick="window.open('https://www.linkedin.com/in/aertugrulakyol/', '_blank');"
+            class="hoverable boing"
+          >
+            linkedin
+          </button>
+          <button
+            onclick="location.href='mailto:ertuakyol@gmail.com';"
+            class="hoverable boing"
+          >
+            mail
+          </button>
+        </div>
+        <div class="menu">
+          <button onclick="toggleDropdown(event, 1)" class="hoverable boing">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Menu / Menu_Alt_05">
+                <path
+                  id="Vector"
+                  d="M5 17H13M5 12H19M11 7H19"
+                  stroke="var(--dark)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <button onclick="location.href='index.html'" class="hoverable boing">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.5367 5.2068L6.65499 12.9068C5.00499 14.1901 3.66666 16.9218 3.66666 18.9934V32.5784C3.66666 36.8317 7.13166 40.3151 11.385 40.3151H32.615C36.8683 40.3151 40.3333 36.8317 40.3333 32.5967V19.2501C40.3333 17.0318 38.8483 14.1901 37.0333 12.9251L25.7033 4.9868C23.1367 3.19014 19.0117 3.2818 16.5367 5.2068Z"
+                fill="none"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 32.9817V27.4817"
+                stroke="var(--dark)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button onclick="toggleDropdown(event, 3)" class="hoverable boing">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 16C18 20.24 14.5733 23.6667 10.3333 23.6667C6.09329 23.6667 2.66663 20.24 2.66663 16C2.66663 11.76 6.09329 8.33337 10.3333 8.33337"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3334 16C13.3334 11.5867 16.92 8 21.3334 8C25.7467 8 29.3334 11.5867 29.3334 16C29.3334 20.4133 25.7467 24 21.3334 24"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div id="dropdown1" class="menu-item">
+            <a href="ux-ui.html" class="hoverable shadow boing">Ux/Ui</a>
+            <a href="prompts.html" class="hoverable shadow boing">Prompts</a>
+            <a href="about.html" class="hoverable shadow boing">About</a>
+          </div>
+          <div id="dropdown3" class="menu-item">
+            <a
+              target="_blank"
+              href="https://twitter.com/aertugrulakyol"
+              class="hoverable shadow boing"
+              >Twitter</a
+            >
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aertugrulakyol/"
+              class="hoverable shadow boing"
+              >Linkedin</a
+            >
+            <a
+              target="_blank"
+              href="mailto:ertuakyol@gmail.com, ertuakyol@gmail.com"
+              class="hoverable shadow boing"
+              >Gmail</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

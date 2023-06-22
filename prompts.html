@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <div class="big-grid">
+      <header>
+        <div class="logo">
+          <svg
+            id="b"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 875.16 926.54"
+          >
+            <defs>
+              <style>
+                .d {
+                  fill: var(--dark);
+                }
+              </style>
+            </defs>
+            <g id="c">
+              <circle class="d" cx="236.91" cy="509.85" r="79.97" />
+              <circle class="d" cx="437.68" cy="678.21" r="79.97" />
+              <circle class="d" cx="158.53" cy="678.21" r="79.97" />
+              <circle class="d" cx="79.97" cy="846.57" r="79.97" />
+              <path
+                class="d"
+                d="m875.16,846.57c0,44.17-35.81,79.97-79.97,79.97-27.59,0-51.92-13.97-66.29-35.23l-.02-.03-10.62-22.79v-.03s-235.88-505.81-235.88-505.81c-17.71-37.98-71.71-37.98-89.42,0h0s-6.58,14.12-6.58,14.12c-6.95,14.91-18.31,27.46-32.81,35.23-11.24,6.03-24.09,9.45-37.73,9.45-44.17,0-79.97-35.8-79.97-79.96,0-.83.01-1.66.04-2.48.33-10.85,3.11-21.5,7.7-31.34l2.47-5.29,104.1-223.25,12.26-26.28,3.03-6.51c5.85-12.56,14.67-23.59,25.96-31.62,13.05-9.27,29.01-14.72,46.24-14.72s33.18,5.44,46.23,14.71c11.29,8.01,20.1,19.04,25.96,31.58l3.09,6.61,12.23,26.23,338.98,726.93,3.46,7.42c4.5,9.66,7.21,20.11,7.52,30.76.02.77.03,1.55.03,2.33Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="switch hoverable">
+          <input type="checkbox" id="mode-switch" />
+          <label for="mode-switch">
+            <svg
+              class="moon"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_384_40)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.5635 21.7456C16.9178 21.2362 18.8093 18.5189 18.8093 18.5189L17.3681 22.4213L21.837 23.0602L17.3681 23.6986L19.0981 27.0336C19.0981 27.0336 16.9401 24.8 16.635 24.4848C16.7607 29.3205 16.7916 30.5104 16.7916 30.5104C16.7916 30.5104 27.8198 25.4725 21.6929 14.3328C21.6929 14.3328 29.3337 6.03142 22.4141 0.922622C22.4141 0.922622 34.2356 7.94715 26.7389 20.009C26.7389 20.009 32.9379 14.049 29.694 8.01809C29.694 8.01809 35.3165 15.8229 28.4684 24.4085C28.4684 24.4085 30.3426 23.273 32.0005 18.945C32.0005 18.945 30.7912 31.8298 16.1463 31.9989V32.0005C16.0975 32.0005 16.0488 32.0005 16.0005 32.0005C15.9523 32.0005 15.9036 32.0005 15.8548 32.0005V31.9989C1.20935 31.8293 0 18.9445 0 18.9445C1.65798 23.2725 3.5316 24.408 3.5316 24.408C-3.31595 15.8224 2.30654 8.01756 2.30654 8.01756C-0.937352 14.0485 5.26217 20.0085 5.26217 20.0085C-2.23447 7.94662 9.58645 0.922622 9.58645 0.922622C2.66685 6.03142 10.3076 14.3328 10.3076 14.3328C4.1807 25.4725 15.2089 30.5104 15.2089 30.5104C15.2089 30.5104 15.2398 29.32 15.3655 24.4848C15.0605 24.8005 12.9024 27.0336 12.9024 27.0336L14.6324 23.6986L10.1635 23.0602L14.6324 22.4213L13.1912 18.5189C13.1912 18.5189 15.0827 21.2362 15.437 21.7456C15.5974 15.569 15.9962 0.243155 15.9978 0.171155C15.9984 0.00102162 15.9984 0.000488281 15.9984 0.000488281C15.9984 0.000488281 15.9984 0.000488281 16 0.0708883C16.0022 0.000488281 16.0022 0.000488281 16.0022 0.000488281C16.0022 0.000488281 16.0022 0.00155495 16.0027 0.171155C16.006 0.292222 16.4031 15.5829 16.5635 21.7456Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_384_40">
+                  <rect width="32" height="32" fill="none" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              class="sun"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_383_36)">
+                <path
+                  d="M0 0L4.97956 8.48178L0.775111 7.65902L5.76391 14.1614C5.54738 15.376 5.54702 16.6219 5.76391 17.8364L0.775111 24.3385L4.97956 23.5157L0 32L8.48178 27.0204L7.65902 31.2249L14.1614 26.2361C15.3767 26.453 16.6233 26.453 17.8386 26.2361L24.341 31.2249L23.5182 27.0204L32 32L27.0204 23.5161L31.2249 24.3388L26.2361 17.8364C26.4526 16.6219 26.453 15.376 26.2361 14.1614L31.2249 7.65902L27.0204 8.48178L32 0L23.5182 4.97956L24.341 0.772622L17.8364 5.76356C17.2295 5.65547 16.6148 5.6 16 5.6C15.3852 5.6 14.7705 5.65547 14.1636 5.76356L7.65902 0.772622L8.48178 4.97956L0 0ZM16 7.12711C18.2716 7.12711 20.5429 7.99289 22.2748 9.7248C25.7387 13.1886 25.7383 18.8114 22.2748 22.2748C18.8114 25.7383 13.189 25.7365 9.7248 22.2727C6.26062 18.8089 6.26133 13.1861 9.7248 9.72267C11.4567 7.99076 13.7287 7.12711 16 7.12711ZM16 9.74542C14.3989 9.74542 12.7979 10.3541 11.5772 11.5751C9.13564 14.0167 9.13529 17.9812 11.5772 20.4228C14.0192 22.8647 17.9812 22.8644 20.4228 20.4228C22.8644 17.9812 22.8647 14.0167 20.4228 11.5751C19.2018 10.3541 17.6014 9.74578 16 9.74542Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_383_36">
+                  <rect width="32" height="32" fill="none" />
+                </clipPath>
+              </defs>
+            </svg>
+          </label>
+        </div>
+      </header>
+      <section class="grid-prompts">
+        <div class="slider-container-prompt">
+          <div class="slider-wrapper">
+            <div class="outer" id="sliderContainer">
+              <div class="inner" id="sliderInner">
+                <img src="./prompts/7.png" alt="" />
+                <img src="./prompts/4.jpg" alt="" />
+                <img src="./prompts/2.jpg" alt="" />
+                <img src="./prompts/1.jpg" alt="" />
+                <img src="./prompts/3.jpg" alt="" />
+                <img src="./prompts/5.jpg" alt="" />
+                <img src="./prompts/6.jpg" alt="" />
+                <img src="qmn-mockup/margin.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar"></div>
+            <div class="progress-bar-border"></div>
+          </div>
+        </div>
+      </section>    
+      <footer>
+        <div class="footer-container">
+          <button onclick="location.href='ux-ui.html'" class="hoverable boing">
+            design
+          </button>
+          <button
+            onclick="location.href='prompts.html'"
+            class="hoverable boing"
+          >
+            prompts
+          </button>
+          <button onclick="location.href='about.html'" class="hoverable boing">
+            about
+          </button>
+          <button onclick="location.href='index.html'" class="hoverable boing">
+            <svg
+              width="2rem"
+              height="2rem"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.79 22.75H6.21C3.47 22.75 1.25 20.52 1.25 17.78V10.37C1.25 9.00997 2.09 7.29997 3.17 6.45997L8.56 2.25997C10.18 0.999975 12.77 0.939975 14.45 2.11997L20.63 6.44997C21.82 7.27997 22.75 9.05997 22.75 10.51V17.79C22.75 20.52 20.53 22.75 17.79 22.75ZM9.48 3.43997L4.09 7.63997C3.38 8.19997 2.75 9.46997 2.75 10.37V17.78C2.75 19.69 4.3 21.25 6.21 21.25H17.79C19.7 21.25 21.25 19.7 21.25 17.79V10.51C21.25 9.54997 20.56 8.21997 19.77 7.67997L13.59 3.34997C12.45 2.54997 10.57 2.58997 9.48 3.43997Z"
+                fill="var(--dark)"
+              />
+              <path
+                d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V15C11.25 14.59 11.59 14.25 12 14.25C12.41 14.25 12.75 14.59 12.75 15V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                fill="var(--dark)"
+              />
+            </svg>
+          </button>
+          <button
+            onclick="window.open('https://twitter.com/aertugrulakyol', '_blank');"
+            class="hoverable boing"
+          >
+            twitter
+          </button>
+          <button
+            onclick="window.open('https://www.linkedin.com/in/aertugrulakyol/', '_blank');"
+            class="hoverable boing"
+          >
+            linkedin
+          </button>
+          <button
+            onclick="location.href='mailto:ertuakyol@gmail.com';"
+            class="hoverable boing"
+          >
+            mail
+          </button>
+        </div>
+        <div class="menu">
+          <button onclick="toggleDropdown(event, 1)" class="hoverable boing">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Menu / Menu_Alt_05">
+                <path
+                  id="Vector"
+                  d="M5 17H13M5 12H19M11 7H19"
+                  stroke="var(--dark)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <button onclick="location.href='index.html'" class="hoverable boing">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.5367 5.2068L6.65499 12.9068C5.00499 14.1901 3.66666 16.9218 3.66666 18.9934V32.5784C3.66666 36.8317 7.13166 40.3151 11.385 40.3151H32.615C36.8683 40.3151 40.3333 36.8317 40.3333 32.5967V19.2501C40.3333 17.0318 38.8483 14.1901 37.0333 12.9251L25.7033 4.9868C23.1367 3.19014 19.0117 3.2818 16.5367 5.2068Z"
+                fill="none"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 32.9817V27.4817"
+                stroke="var(--dark)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button onclick="toggleDropdown(event, 3)" class="hoverable boing">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 16C18 20.24 14.5733 23.6667 10.3333 23.6667C6.09329 23.6667 2.66663 20.24 2.66663 16C2.66663 11.76 6.09329 8.33337 10.3333 8.33337"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3334 16C13.3334 11.5867 16.92 8 21.3334 8C25.7467 8 29.3334 11.5867 29.3334 16C29.3334 20.4133 25.7467 24 21.3334 24"
+                stroke="var(--dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div id="dropdown1" class="menu-item">
+            <a href="ux-ui.html" class="hoverable shadow boing">Ux/Ui</a>
+            <a href="prompts.html" class="hoverable shadow boing">Prompts</a>
+            <a href="about.html" class="hoverable shadow boing">About</a>
+          </div>
+          <div id="dropdown3" class="menu-item">
+            <a
+              target="_blank"
+              href="https://twitter.com/aertugrulakyol"
+              class="hoverable shadow boing"
+              >Twitter</a
+            >
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aertugrulakyol/"
+              class="hoverable shadow boing"
+              >Linkedin</a
+            >
+            <a
+              target="_blank"
+              href="mailto:ertuakyol@gmail.com, ertuakyol@gmail.com"
+              class="hoverable shadow boing"
+              >Gmail</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
