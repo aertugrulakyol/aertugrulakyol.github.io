@@ -530,6 +530,10 @@ dialog {
   -ms-overflow-style: none;
 }
 
+.dialog::-webkit-scrollbar {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   dialog {
     padding: 1rem;
