@@ -290,7 +290,8 @@ footer a {
   text-align: center;
   font-size: 1.188rem;
   font-weight: 500;
-  color: var(--light);
+  padding: 0.5rem 1rem;
+  color: var(--dark);
   letter-spacing: 1px;
 }
 
