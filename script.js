@@ -195,3 +195,47 @@ sliderContainers.forEach((sliderContainer, index) => {
     progressBar.style.width = progress + '%';
   }
 });
+
+
+
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const sliderContainer = document.getElementById('sliderContainer');
+
+let scrollInterval;
+
+leftArrow.addEventListener('mousedown', () => {
+  scrollInterval = setInterval(() => {
+    sliderContainer.scrollBy({
+      left: -500, // Adjust the scroll distance if needed
+      behavior: 'smooth'
+    });
+  }, 100); // Adjust the scrolling speed if needed
+});
+
+leftArrow.addEventListener('mouseup', () => {
+  clearInterval(scrollInterval);
+});
+
+leftArrow.addEventListener('mouseleave', () => {
+  clearInterval(scrollInterval);
+});
+
+rightArrow.addEventListener('mousedown', () => {
+  scrollInterval = setInterval(() => {
+    sliderContainer.scrollBy({
+      left: 500, // Adjust the scroll distance if needed
+      behavior: 'smooth'
+    });
+  }, 100); // Adjust the scrolling speed if needed
+});
+
+rightArrow.addEventListener('mouseup', () => {
+  clearInterval(scrollInterval);
+});
+
+rightArrow.addEventListener('mouseleave', () => {
+  clearInterval(scrollInterval);
+});
+
+
