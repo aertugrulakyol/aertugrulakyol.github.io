@@ -33,43 +33,6 @@ function onMouseHoverOut() {
   });
 }
 
-// dropwodnbutton
-
-document.addEventListener("click", function (event) {
-  var dropdowns = document.getElementsByClassName("menu-item");
-  var buttons = document.getElementsByTagName("button");
-  for (var i = 0; i < dropdowns.length; i++) {
-    var dropdown = dropdowns[i];
-    var button = buttons[i];
-    if (event.target !== dropdown && event.target !== button) {
-      dropdown.style.display = "none";
-    }
-  }
-});
-
-function toggleDropdown(event, dropdownNumber) {
-  event.stopPropagation();
-  var dropdown = document.getElementById("dropdown" + dropdownNumber);
-  var dropdowns = document.getElementsByClassName("menu-item");
-  for (var i = 0; i < dropdowns.length; i++) {
-    var otherDropdown = dropdowns[i];
-    if (otherDropdown !== dropdown) {
-      otherDropdown.style.display = "none";
-    }
-  }
-  dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-
-  // Add CSS transitions
-  dropdown.style.opacity = "0";
-  dropdown.style.bottom = "50%";
-  dropdown.style.transition =
-    "opacity 0.3s ease-in-out, bottom 0.3s ease-in-out";
-  setTimeout(function () {
-    dropdown.style.opacity = "1";
-    dropdown.style.bottom = "100%";
-  }, 0);
-}
-
 const anchors = document.querySelectorAll(".boing");
 
 anchors.forEach((anchor) => {
@@ -115,42 +78,6 @@ shadows.forEach((anchor) => {
     anchor.style.boxShadow = "var(--shadow)";
   });
 });
-
-const modeSwitchBtn = document.getElementById("mode-switch");
-const root = document.documentElement;
-const body = document.body;
-
-// Retrieve the saved preference from local storage, if any
-const savedPreference = localStorage.getItem("preference");
-if (savedPreference) {
-  applyPreference(savedPreference);
-  modeSwitchBtn.checked = savedPreference === "light";
-}
-
-modeSwitchBtn.addEventListener("change", () => {
-  if (modeSwitchBtn.checked) {
-    applyPreference("light");
-    localStorage.setItem("preference", "light");
-  } else {
-    applyPreference("dark");
-    localStorage.setItem("preference", "dark");
-  }
-});
-
-function applyPreference(preference) {
-  if (preference === "light") {
-    root.style.setProperty("--dark", "#fff");
-    root.style.setProperty("--light", "#1b1f22");
-    root.style.setProperty("--shadow", "var(--shadow-dark-high)");
-    root.style.setProperty("--background", "#0f0f10");
-  } else {
-    root.style.setProperty("--dark", "#1b1f22");
-    root.style.setProperty("--light", "#fff");
-    root.style.setProperty("--shadow", "var(--shadow-light-medium)");
-    root.style.setProperty("--background", "#e6edf2");
-  }
-}
-
 
 
 //-----------------------------carousel-----------------------------//
@@ -239,3 +166,33 @@ rightArrow.addEventListener('mouseleave', () => {
 });
 
 
+/*------------------------------------*/
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+  
+  var button = document.querySelector('.dropbtn > img');
+  button.style.transform = dropdown.classList.contains("show") ? "rotate(90deg)" : "none";
+  button.style.transition = "0.2s ease-out";
+}
