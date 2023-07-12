@@ -123,8 +123,6 @@ sliderContainers.forEach((sliderContainer, index) => {
   }
 });
 
-
-
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 const sliderContainer = document.getElementById('sliderContainer');
