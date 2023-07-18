@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Ahmet Ertugrul Akyol | Portfolio</title>
-    <link rel="icon" type="image/png" href="logo.svg">
+    <link rel="icon" type="image/png" href="logo.svg" />
     <meta
       name="description"
       content="Creating responsive websites, apps, game interfaces, and other digital products that are visually stunning & user-friendly."
@@ -50,31 +49,210 @@
     </script>
   </head>
   <body>
-    <div style="text-wrap: balance;" class="hero">
+    <div style="text-wrap: balance" class="hero" id="hero">
       <div class="hero-text">
         <h1>Hi, I am Ahmet</h1>
-        <h2>Product Designer</h2>
+        <h2>Product Designer <a href="https://kiraz.co/" target="_blank">@Kiraz.co</a></h2>
         <p>
-          Creating responsive websites, apps, game interfaces, and other digital
+          Creating responsive websites, mobile apps, game interfaces, and other digital
           products that are <strong>visually stunning & user-friendly.</strong>
         </p>
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn hoverable shadow boing">Contact Me <img src="contact.svg" alt="" /></button>
+          <button onclick="myFunction()" class="dropbtn hoverable boing">
+            Contact Me <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.9 19.1498C8.27 19.1498 7.68 18.9998 7.16 18.6998C5.93 17.9898 5.25 16.5598 5.25 14.6798V9.3298C5.25 7.4498 5.93 6.0198 7.16 5.3098C8.39 4.5998 9.96 4.7298 11.6 5.6698L16.23 8.3398C17.86 9.2798 18.76 10.5798 18.76 11.9998C18.76 13.4198 17.86 14.7198 16.23 15.6598L11.6 18.3298C10.66 18.8798 9.74 19.1498 8.9 19.1498ZM8.9 6.3598C8.53 6.3598 8.19 6.4398 7.9 6.6098C7.16 7.0398 6.75 7.9998 6.75 9.3298V14.6698C6.75 15.9898 7.16 16.9598 7.91 17.3898C8.66 17.8198 9.7 17.6898 10.85 17.0298L15.48 14.3598C16.63 13.6998 17.26 12.8598 17.26 11.9998C17.26 11.1398 16.63 10.2998 15.48 9.6398L10.85 6.9698C10.14 6.5598 9.48 6.3598 8.9 6.3598Z" fill="var(--dark)"/>
+              </svg>
+          </button>
           <div id="myDropdown" class="dropdown-content">
-            <a class="hoverable boing" href="mailto:ertuakyol@gmail.com">Mail</a>
-            <a class="hoverable boing" href="https://www.linkedin.com/in/aertugrulakyol/" target="_blank">Linkedin</a>
-            <a class="hoverable boing" href="https://twitter.com/aertugrulakyol" target="_blank">Twitter</a>
+            <a class="hoverable boing" href="mailto:ertuakyol@gmail.com"
+              >Mail</a
+            >
+            <a
+              class="hoverable boing"
+              href="https://www.linkedin.com/in/aertugrulakyol/"
+              target="_blank"
+              >Linkedin</a
+            >
+            <a
+              class="hoverable boing"
+              href="https://twitter.com/aertugrulakyol"
+              target="_blank"
+              >Twitter</a
+            >
           </div>
         </div>
       </div>
       <div class="hero-img">
-        <img src="profile-blob.png" alt="" />
+        <div class="lottie" id="animation-container">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+          <script>
+            var animation = bodymovin.loadAnimation({
+              container: document.getElementById("animation-container"),
+              renderer: "svg", // Specify the renderer type, e.g., 'svg' or 'canvas'
+              path: "./afw.json",
+              loop: true,
+              autoplay: true,
+              name: "afw",
+              xhrSettings: {
+                responseType: "text", // Set the responseType to 'text'
+              },
+            });
+          </script>
+        </div>
+        <img class="h-img" src="profile-blob.png" alt="" />
       </div>
     </div>
+    <section class="work" id="projects">
+      <div class="work-left">
+        <a href="qmn.html"
+          ><img
+            src="./qmn-mockup/qmn-thumbnail.png"
+            loading="lazy"
+            alt="qmn-thumbnail"
+          />
+          <div class="info-wrapper">
+            <div class="info">
+              <h4>SaaS Application</h4>
+              <div class="tags">
+                <p>UX/UI</p>
+                <p>B2B</p>
+                <p>Responsive</p>
+              </div>
+            </div>
+            <p>Web app with customizable dashboard, leads, contacts and more</p>
+          </div></a
+        >
+        <a href="balqabi.html"
+          ><img
+            src="./balqabi-mockup/balqabi-thumbnail.png"
+            loading="lazy"
+            alt="thumbnail"
+          />
+          <div class="info-wrapper">
+            <div class="info">
+              <h4>Game UI</h4>
+              <div class="tags">
+                <p>UX/UI</p>
+                <p>Game UI</p>
+              </div>
+            </div>
+            <p>Designed Balqabi’s main menu, hud and settings.</p>
+          </div></a
+        >
+        <a href="tt.html"
+          ><img
+            src="./tt-mockup/tt-thumbnail.png"
+            alt="thumbnail"
+            loading="lazy"
+          />
+          <div class="info-wrapper">
+            <div class="info">
+              <h4>E-commerce website</h4>
+              <div class="tags">
+                <p>UX/UI</p>
+                <p>E-Commerce</p>
+                <p>Responsive</p>
+              </div>
+            </div>
+            <p>Vintage clothing focused e-commerce website</p>
+          </div>
+        </a>
+      </div>
+      <div class="work-right">
+        <a href="cc.html"
+          ><img
+            src="./cc-mockup/cc-thumbnail.png"
+            loading="lazy"
+            alt="thumbnail"
+          />
+          <div class="info-wrapper">
+            <div class="info">
+              <h4>Crypto App</h4>
+              <div class="tags">
+                <p>UX/UI</p>
+                <p>Mobile</p>
+              </div>
+            </div>
+            <p>Wallet with DeFi, NFTs and Crypto </p>
+          </div></a
+        >
+        <a href="kiraz.html"
+          ><img
+            src="./kiraz-mockup/kiraz-thumbnail.png"
+            alt="thumbnail"
+            loading="lazy"
+          />
+          <div class="info-wrapper">
+            <div class="info">
+              <h4>Error pages</h4>
+              <div class="tags">
+                <p>UX/UI</p>
+                <p>Website</p>
+                <p>Responsive</p>
+              </div>
+            </div>
+            <p>Designed Kiraz.co’s error pages</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img"><img src="about-img.png" alt="" /></div>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p>
+          I've spent my entire life looking for a way to express my creativity,
+          and I've finally come to the conclusion that product design is the
+          perfect fit for me. I wanted to learn programming before starting this
+          journey, and during the pandemic, I attended Ankara University's
+          department of internet and network technologies, where I graduated
+          with highest grades. As a product designer now, this has actually
+          given me skills that are extremely valuable, like programming language
+          knowledge and improved engineering communication.
+        </p>
+        <p>
+          I started working as a freelancer as soon as I received my college
+          degree. The objective was to create the website for a business called
+          Hidrojeo. However, after the project was complete, regardless of how
+          happy the client was, I realized there was a lot I could do better, so
+          I began my research. I then learned about the idea of user experience
+          and signed up for the Google UX Design course. After taking this
+          course and expanding my knowledge of user experience, I learned the
+          principles of visual design and picked up skills in user interface,
+          illustration, and photoshop.
+        </p>
+        <p>
+          Due to my interest and enthusiasm in video games, I looked for a
+          freelance position to create game interfaces and collaborated with an
+          independent game producer who created the title Balqabi.
+        </p>
+        <p>
+          At Kiraz.co, I'm currently continuing my journey as a product designer
+          in the areas of SaaS and e-commerce site design.
+        </p>
+        <p>
+          I'm excited to use this rich and varied experience to collaborate with
+          you on my current and upcoming projects!
+        </p>
+        <a
+          href="aeakyolresume.pdf"
+          target="_blank"
+          class="hoverable boing"
+        >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 17.75C8.9 17.75 8.81 17.73 8.71 17.69C8.43 17.58 8.25 17.3 8.25 17V11C8.25 10.59 8.59 10.25 9 10.25C9.41 10.25 9.75 10.59 9.75 11V15.19L10.47 14.47C10.76 14.18 11.24 14.18 11.53 14.47C11.82 14.76 11.82 15.24 11.53 15.53L9.53 17.53C9.39 17.67 9.19 17.75 9 17.75Z" fill="var(--dark)"/>
+          <path d="M8.99945 17.7499C8.80945 17.7499 8.61945 17.6799 8.46945 17.5299L6.46945 15.5299C6.17945 15.2399 6.17945 14.7599 6.46945 14.4699C6.75945 14.1799 7.23945 14.1799 7.52945 14.4699L9.52945 16.4699C9.81945 16.7599 9.81945 17.2399 9.52945 17.5299C9.37945 17.6799 9.18945 17.7499 8.99945 17.7499Z" fill="var(--dark)"/>
+          <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H14C14.41 1.25 14.75 1.59 14.75 2C14.75 2.41 14.41 2.75 14 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V10C21.25 9.59 21.59 9.25 22 9.25C22.41 9.25 22.75 9.59 22.75 10V15C22.75 20.43 20.43 22.75 15 22.75Z" fill="var(--dark)"/>
+          <path d="M22 10.75H18C14.58 10.75 13.25 9.41999 13.25 5.99999V1.99999C13.25 1.69999 13.43 1.41999 13.71 1.30999C13.99 1.18999 14.31 1.25999 14.53 1.46999L22.53 9.46999C22.74 9.67999 22.81 10.01 22.69 10.29C22.57 10.57 22.3 10.75 22 10.75ZM14.75 3.80999V5.99999C14.75 8.57999 15.42 9.24999 18 9.24999H20.19L14.75 3.80999Z" fill="var(--dark)"/>
+          </svg>
+          Resume</a
+        >
+      </div>
+    </section>
     <footer>
       <div class="footer-contain">
         <div class="footer-left">
-          <a class="boing hoverable" href="index.html"
+          <a class="boing hoverable" href="#hero"
             ><svg
               id="b"
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +261,7 @@
               <defs>
                 <style>
                   .d {
-                    fill: #f2cb0c;
+                    fill: var(--dark);
                   }
                 </style>
               </defs>
@@ -96,26 +274,15 @@
                   class="d"
                   d="m875.16,846.57c0,44.17-35.81,79.97-79.97,79.97-27.59,0-51.92-13.97-66.29-35.23l-.02-.03-10.62-22.79v-.03s-235.88-505.81-235.88-505.81c-17.71-37.98-71.71-37.98-89.42,0h0s-6.58,14.12-6.58,14.12c-6.95,14.91-18.31,27.46-32.81,35.23-11.24,6.03-24.09,9.45-37.73,9.45-44.17,0-79.97-35.8-79.97-79.96,0-.83.01-1.66.04-2.48.33-10.85,3.11-21.5,7.7-31.34l2.47-5.29,104.1-223.25,12.26-26.28,3.03-6.51c5.85-12.56,14.67-23.59,25.96-31.62,13.05-9.27,29.01-14.72,46.24-14.72s33.18,5.44,46.23,14.71c11.29,8.01,20.1,19.04,25.96,31.58l3.09,6.61,12.23,26.23,338.98,726.93,3.46,7.42c4.5,9.66,7.21,20.11,7.52,30.76.02.77.03,1.55.03,2.33Z"
                 />
-              </g></svg></a>
+              </g></svg>
+            </a>
         </div>
         <div class="footer-right">
-          <a class="hoverable boing" href="projects.html">Projects</a>
-          <a class="hoverable boing" href="about.html">About</a>
+          <a class="hoverable boing" href="#projects">Projects</a>
+          <a class="hoverable boing" href="#about">About</a>
         </div>
       </div>
     </footer>
-    <div class="cursor">
-      <div class="cursor__ball cursor__ball--big">
-        <svg height="30" width="30">
-          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-        </svg>
-      </div>
-      <div class="cursor__ball cursor__ball--small">
-        <svg height="10" width="10">
-          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-        </svg>
-      </div>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
